@@ -1,0 +1,30 @@
+{
+  "name": "web3-polyfill-ledger",
+  "version": "1.0.0",
+  "description": "Web3 polyfill",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register",
+    "build": "babel src --out-dir lib",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Neufund/web3-polyfill.git"
+  },
+  "author": "Neufund",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Neufund/web3-polyfill/issues"
+  },
+  "homepage": "https://github.com/Neufund/web3-polyfill#readme",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-preset-es2015": "^6.22.0",
+    "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "web3-provider-engine": "^8.6.1"
+  }
+}
