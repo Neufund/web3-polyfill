@@ -1,12 +1,12 @@
 {
-  "name": "web3-polyfill-ledger",
+  "name": "web3-polyfill",
   "version": "1.0.0",
   "description": "Web3 polyfill",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
     "build": "babel src --out-dir lib",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build && npm test"
   },
   "repository": {
     "type": "git",
